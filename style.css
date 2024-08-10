@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body{
+    background-color: hsl(210, 46%, 95%);
+}
+
+.attribution {
+     font-size: large; 
+     text-align: center;
+     font-family: cursive; 
+
+    }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+
+ .flex-container{
+    display: flex;
+    width: 60%;
+ }
+
+ div.flex-container > div.img-container > img{
+    height: 300px;
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+ }
+
+img.avatar-image{
+    border-radius: 50%;
+    width: 30px;
+
+}
+
+div.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+div.container-footer{
+   display: grid;
+   grid-template-columns: 0.1fr 1fr 0.5fr;
+   align-items: center;
+}
+
+div.text-container{
+    max-width: 100%;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 300px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.container-footer > div > h2{
+    font-size: small;
+}
+
+div.text-container > h3 {
+    font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 0px;
+}
+
+div.text-container > p{
+    font-family: "Manrope", sans-serif;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+button{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 0px;
+    
+    background-color: hsl(212, 23%, 69%);
+    position: relative;
+}
+
+button:hover{
+    background-color: white;
+    border: 1px solid black;
+}
+
+.share{
+    display: none;
+    background-color: hsl(217, 19%, 35%);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 40px;
+    border-radius: 10px;
+    height: 35px;
+}
+
+.share-mobile{
+    display: grid;
+    background-color: hsl(217, 19%, 35%);
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 35px;
+}
+
+div.share > div, div.share > span {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+div.button{
+    position: relative;
+    justify-self: end;
+}
+
+div.container-footer > div > h2{
+    margin: 0px;
+    font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+div.container-footer > img{
+    margin-right: 20px;
+}
+.share-mobile{
+    display: none;
+}
+
+#mobile{
+    display: none;
+}
+
+@media only screen and (min-width: 319px) and (max-width: 766px){
+    .share-mobile{
+        display: none;
+        background-color: hsl(217, 19%, 35%);
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        align-items: center;
+        justify-content: center;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: 35px;
+        font-family: "Manrope", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        width: 100%;
+    }
+    .share-mobile-active{
+            display: grid;
+            background-color: hsl(217, 19%, 35%);
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            align-items: center;
+            justify-content: center;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            height: 35px;
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            width: 100%;
+        
+    }
+    .flex-container{
+        display: flex;
+        width: 70%;
+        flex-direction: column;
+        margin-bottom: 10%;
+        
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+     }
+     div.flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    div.img-container{
+        height: 100%;
+    }
+    div.flex-container > div.img-container > img{
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+     }
+     div.text-container{
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 100%;
+
+     }
+
+     div.flex-container{
+        background-color: white;
+     }
+     div.container-footer{
+        margin-top: 20px;
+     }
+     div.share > div, div.share-mobile > span {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-family: "Manrope", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+    }
+    #laptop{
+        display: none;
+    }
+    #mobile{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1023px){
+    div.flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    div.flex-container > div.img-container > img{
+        height: 100%;
+        width: 200px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+     }
+     div.text-container > h3 {
+        font-family: "Manrope", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+      margin-bottom: 0px;
+      font-size: large;
+    }
+    div.text-container > p{
+        font-family: "Manrope", sans-serif;
+        font-weight: 300;
+        margin-bottom: 0px;
+        font-size: small;
+    }
+    div.container-footer {
+        margin-top: 10px;
+        width: 100%;
+        
+    }
+    div.container-footer > div > h2{
+        margin: 0px;
+        font-family: "Manrope", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+      font-size: smaller;
+    }
+    div.container-footer > img{
+        margin-right: 10px;
+    }
+    div.text-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .share-laptop-active{
+        display: flex;
+        background-color: hsl(217, 19%, 35%);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 40px;
+        border-radius: 10px;
+        height: 35px;
+    }
+}
+
+@media only screen and (min-width: 1023px) {
+    div.container-footer{
+    margin-top: 20px;
+    }
+    div.flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .share-laptop-active{
+        display: flex;
+        background-color: hsl(217, 19%, 35%);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 40px;
+        border-radius: 10px;
+        height: 35px;
+    }
+}
